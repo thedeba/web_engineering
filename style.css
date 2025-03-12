@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: rgb(14, 3, 3);
+    background-color: #333;
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+header{
+    position: relative;
+}
+header::before{
+    top: 0;
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.5;
+    z-index: -1;
+}
+.logo{
+    position: absolute;
+    left: 0;
+    font-size: 26px;
+    color: white;
+}
+.navbar{
+    padding: 10px 20px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.item-list{
+    display: flex;
+}
+.item-list li{
+    list-style: none;
+}
+.item-list li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+.item-list li a:hover{
+    background-color: darkblue;
+    color: white;
+    border-radius: 4px;
+}
+
+section {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="date"], 
+input[type="password"], 
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+span {
+    font-size: 14px;
+    color: #666;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="checkbox"] + span {
+    font-size: 13px;
+}
+
+input[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+/* .container{
+    height: 10rem;
+    width: 10rem;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    animation: dev infinite 3s;
+}
+
+@keyframes dev {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        top: 100px;
+        left: 0;
+    }
+    50%{
+        top: 100px;
+        left: 300px;
+    }
+    75%{
+        top: 0;
+        left: 300px;
+    }
+    100%{
+        top: 0;
+        left: 0;
+    }
+} */

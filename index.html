@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navigation">
+            <div class="logo">Logo</div>
+            <nav class="navbar">
+                <ul class="item-list">
+                    <li class="item" id="item-1"><a href="#">Home</a></li>
+                    <li class="item" id="item-2"><a href="#">Services</a></li>
+                    <li class="item" id="item-3"><a href="#">About us</a></li>
+                    <li class="item" id="item-4"><a href="#">Blogs</a></li>
+                    <li class="item" id="item-5"><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <form action="insert_data.php" method="post">
+            <legend>Registration</legend>
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" required>
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <label for="gender">Gender</label>
+            <select name="gender" id="genser" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+            <input type="checkbox" name="checkbox" id="checkbox" required>
+            <span id="terms">I agree to the terms & conditions of the Services</span>
+            <input type="submit" value="Register">
+        </form>
+    </section>
+</body>
+
+</html>
